@@ -1,0 +1,40 @@
+.carouselImage {
+    border-radius: 15px; /* ปรับความโค้งตามต้องการ */
+  }
+  .carousel-inner {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* ทำให้ภาพครอบคลุมพื้นที่และไม่บิดเบือน */
+    border-radius: 15px; /* ความโค้งของขอบภาพ */
+  }
+  .carousel-inner {
+    width: 100%;
+    height: auto;
+    padding: 0 20px; /* เพิ่มการเว้นระยะขอบซ้ายและขวา */
+    box-sizing: border-box; /* คำนวณขนาดรวมการเว้นระยะขอบ */
+  }
+  
+  .carousel-item img {
+    width: 100%; /* ปรับให้ภาพเต็มความกว้างของคอนเทนเนอร์ */
+    max-width: calc(100% - 40px); /* ลดขนาดภาพให้ไม่ติดขอบ */
+    height: auto;
+    object-fit: cover; /* ทำให้ภาพครอบคลุมพื้นที่โดยไม่บิดเบือน */
+    border-radius: 15px; /* ความโค้งของขอบภาพ */
+  }
+  
+  @media (max-width: 767px) {
+    .carousel-inner {
+      padding: 0 10px; /* ลดการเว้นระยะขอบในหน้าจอมือถือ */
+    }
+  
+    .carousel-item img {
+      max-width: calc(100% - 20px); /* ลดขนาดภาพให้ไม่ติดขอบในหน้าจอมือถือ */
+      border-radius: 10px; /* ปรับความโค้งให้เหมาะสมกับหน้าจอมือถือ */
+    }
+  }
+      
